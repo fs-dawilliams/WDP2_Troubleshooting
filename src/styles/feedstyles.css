@@ -1,0 +1,41 @@
+
+body {
+    background-color: #eee;
+    font-family: "Inspiration";
+    font-weight: 300
+}
+
+.card {
+    border: none
+}
+
+
+hr {
+    color: #0a0808;
+    margin-top: 4px;
+    margin-bottom: 8px
+}
+
+
+
+.icons i {
+    font-size: 25px
+}
+
+.icons .fa-heart {
+    color: red
+}
+
+.icons .fa-smile-o {
+    color: yellow;
+    font-size: 29px
+}
+
+.rounded-image {
+    border-radius: 50% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px
+}
