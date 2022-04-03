@@ -9,27 +9,48 @@ npm start
 ```
 
 ## Errors:
-### Public Folder: 
-- [] Update favicon.ico to match project
-- [] index.html - line 27 -  change page title to match project.
-- [] Replace logo192.png and logo512.png - change to match project.
-- [] Update the manifest.json to match project.
-### Src Folder: 
-- []
-- [] All file names: Remove .jsx Replace with .js  || x in file name is not needed. 
-- [] Remove styles folder. Not good method.  Keep css with components if using CSS files. However it is slower.
-- [] Notifications.js needs to be move to the pages folder.
-- [] Remove unused code from index.css
-- [] Delete logo.svg
-- [] Delete AvatarComponent.js - it is not needed.
-- [] React Routing. Routing.js needs to be deleted. That is old vs.5 routing.
-- [] Either use semi-colons or don't use semi-colons but don't do both.
-- [] No warnings or errors in terminal
-- [] Create a folder for the all of the cards.
-- []
-- []
+
+### App.js
+- [] Delete the line import Routes from './components/Routes'
+- [] Change Route path from /Settings to / <Route path='/Settings' element={<Settings />} /> 
+
+### Header.js
+- [] Changes Men to Mens on line <Link to="/Mens" style={styles.padding}>Men</Link>
+- [] Change src from logo to avatar <img style={styles.logo} src={logo} alt="Logo" />
+- [] Change logo width from 50 to 500
+- [] Add link to Shoes, which does not exist and should be removed -  <Link to="/Shoes" style={styles.padding}>Shoes</Link>
 
 
-## Correct:
-- [] They can use any style library. However, React prefers CSS-in-JS
+### Women.js
+- [] added a limit to the get url, which makes it return only 1 item.    axios.get(`https://fakestoreapi.com/products/category/women's%20clothing?limit=1`)
+- [] Change price to item.rating.rate, so nothing is the correct price, price={item.rating.rate}
+
+
+### Settings.js
+- [] Changed city and state to just location instead of location.city  & location.state.  Gives [object Object]
+
+### SettingsForm.js
+- [] Changed labels for first and last name to just name - Name: <input type='text' style={styles.myInput} value={props.fName} placeholder='First Name' />
+
+
+### index.html
+- [] Changed title to Shoopify. <title>Shoopify</title>
+
+### index.js
+- [] Changed path of app import App from './App'; to import App from 'App';
+
+
+### CardItem.js
+- [] Changed flexDirection from column to row.   flexDirection:'column',
+
+
+### MyBtn.js
+- [] This is never used and should be deleted
+
+### Nav.js
+- [] Add page for Shoes, which does not exist.  Should be removed
+
+
+
+
 
